@@ -244,8 +244,8 @@ function generateCandy() {
     let y = random(50, height - 50);
 
     let candy = createSprite(x, y);
-    candy.addAnimation("spin", candyAnimation);
-    candy.changeAnimation("spin");
+    candy.addAnimation("pink", candyAnimation);
+    candy.changeAnimation("pink");
     candy.scale = 2.4;
     candys.add(candy);
   }

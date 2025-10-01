@@ -35,6 +35,7 @@ function preload() {
   candyAnimation = loadAnimation(loadSpriteSheet("assets/Candy.png", 16, 17, 2));
   candyAnimation.frameDelay = 18;
 
+  // goes to array
   wallImages.push(loadImage("assets/Carrot.png"));
   wallImages.push(loadImage("assets/Tomato.png"));
   wallImages.push(loadImage("assets/Broccoli.png"));
@@ -131,7 +132,7 @@ function draw() {
     moving = true;
   }
 
-  // idle
+  // idle animation when player not moving
   if (!moving) {
     player.changeAnimation("idle" + lastDir);
   }
@@ -223,6 +224,7 @@ function generateWalls() {
 
     // check overlap with existing walls
     let overlapping = false;
+    
     for (let i = 0; i < walls.length; i++) {
       if (tempWall.overlap(walls[i])) {
         overlapping = true;

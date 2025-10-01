@@ -46,13 +46,13 @@ function preload() {
   enemyAnimations.runLeft.frameDelay = 12;
 
   biteSound = loadSound("assets/bite.wav");
-  biteSound.setVolume(0.4);
+  biteSound.setVolume(0.3);
 
   grandmaSound = loadSound("assets/getoverhere.wav");
-  grandmaSound.setVolume(0.3);
+  grandmaSound.setVolume(0.2);
 
   bgMusic = loadSound("assets/backmusic.mp3");
-  bgMusic.setVolume(0.4);
+  bgMusic.setVolume(0.3);
 }
 
 function setup() {

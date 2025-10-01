@@ -254,7 +254,7 @@ function generateCandy() {
 }
 
 // if bgmusic does not play at startup
-function mousePressed() {
+function keyPressed() {
   if (key === 'k' || key ==='K') {
     if (!bgMusic.isPlaying()) {
       bgMusic.loop();
